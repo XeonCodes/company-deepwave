@@ -182,7 +182,7 @@ export default function IndexPage() {
                     </Skeleton>
                     <ProfileImgDetailsSmall
                       isLoaded={isLoaded}
-                      name={sessionData?.tutor}
+                      name={v.tutor}
                       img={v.dp}
                       size={15}
                     />
