@@ -1222,14 +1222,23 @@ function IndexPage() {
                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
                     className: "w-full basis-[34%] scrollbar-hide overflow-scroll h-screen flex flex-col gap-3 order-1 sm:order-2",
                     children: post.map((v, i)=>/*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                            className: `p-3 ${v.i == post.length - 1 && "mb-[100px]"} md:p-5 flex flex-col gap-4 rounded-lg shadow-none sm:shadow-md bg-card`,
+                            className: `p-4 md:p-5 flex flex-col gap-4 rounded-lg shadow-none sm:shadow-md bg-card`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
                                     className: "flex items-center opacity-60 justify-between",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
-                                            className: "text-[11px]",
-                                            children: v.category
+                                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                                            className: "rounded-md",
+                                            disableAnimation: true,
+                                            isLoaded: isLoaded,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
+                                                className: "text-[11px]",
+                                                children: v.category
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/dashboard/index.tsx",
+                                                lineNumber: 146,
+                                                columnNumber: 19
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/index.tsx",
                                             lineNumber: 141,
@@ -1237,7 +1246,7 @@ function IndexPage() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$io__["IoIosMore"], {}, void 0, false, {
                                             fileName: "[project]/pages/dashboard/index.tsx",
-                                            lineNumber: 142,
+                                            lineNumber: 148,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -1252,51 +1261,69 @@ function IndexPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
                                             className: "flex gap-3",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                                                    className: `${v.bought ? "bg-purple-200" : "bg-zinc-100"} flex shrink-0 items-center justify-center rounded-lg h-[32px] w-[32px]`,
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$pi__["PiGraduationCapFill"], {
-                                                        size: 18,
-                                                        color: `${v.bought ? "black" : "grey"}`
+                                                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                                                    className: "rounded-md",
+                                                    disableAnimation: true,
+                                                    isLoaded: isLoaded,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                                                        className: `${v.bought ? "bg-purple-200" : "bg-zinc-100"} flex shrink-0 items-center justify-center rounded-lg h-[32px] w-[32px]`,
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$pi__["PiGraduationCapFill"], {
+                                                            size: 18,
+                                                            color: `${v.bought ? "black" : "grey"}`
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/pages/dashboard/index.tsx",
+                                                            lineNumber: 161,
+                                                            columnNumber: 23
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/index.tsx",
-                                                        lineNumber: 150,
+                                                        lineNumber: 158,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                                    lineNumber: 147,
+                                                    lineNumber: 153,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
                                                     className: "flex flex-col gap-1",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                                                            className: " flex items-center gap-1",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$hi2__["HiOutlineCalendarDays"], {
-                                                                    size: 14,
-                                                                    className: " opacity-60"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/pages/dashboard/index.tsx",
-                                                                    lineNumber: 157,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
-                                                                    className: "text-[12px] opacity-60",
-                                                                    children: [
-                                                                        v.start,
-                                                                        " - ",
-                                                                        v.end
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/pages/dashboard/index.tsx",
-                                                                    lineNumber: 161,
-                                                                    columnNumber: 23
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                                                            className: "rounded-md",
+                                                            disableAnimation: true,
+                                                            isLoaded: isLoaded,
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                                                                className: " flex items-center gap-1",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$hi2__["HiOutlineCalendarDays"], {
+                                                                        size: 14,
+                                                                        className: " opacity-60"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                                                        lineNumber: 174,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
+                                                                        className: "text-[12px] opacity-60",
+                                                                        children: [
+                                                                            v.start,
+                                                                            " - ",
+                                                                            v.end
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                                                        lineNumber: 178,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/pages/dashboard/index.tsx",
+                                                                lineNumber: 173,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/index.tsx",
-                                                            lineNumber: 156,
+                                                            lineNumber: 168,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$ProfileDetailSmall$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ProfileImgDetailsSmall"], {
@@ -1306,79 +1333,141 @@ function IndexPage() {
                                                             size: 15
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/index.tsx",
-                                                            lineNumber: 165,
+                                                            lineNumber: 183,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                                    lineNumber: 155,
+                                                    lineNumber: 167,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/dashboard/index.tsx",
-                                            lineNumber: 146,
+                                            lineNumber: 152,
                                             columnNumber: 17
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                                            className: "ml-0 sm:ml-11 lg:ml-0 mt-0 sm:mt-1 lg:mt-0 flex items-center gap-1",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$io5__["IoTimeOutline"], {
-                                                    size: 14,
-                                                    className: " opacity-60"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/pages/dashboard/index.tsx",
-                                                    lineNumber: 174,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
-                                                    className: "text-[12px] opacity-60",
-                                                    children: v.time
-                                                }, void 0, false, {
-                                                    fileName: "[project]/pages/dashboard/index.tsx",
-                                                    lineNumber: 175,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                                            className: "rounded-md",
+                                            disableAnimation: true,
+                                            isLoaded: isLoaded,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                                                className: "ml-0 sm:ml-11 lg:ml-0 mt-0 sm:mt-1 lg:mt-0 flex items-center gap-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$io5__["IoTimeOutline"], {
+                                                        size: 14,
+                                                        className: " opacity-60"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                                        lineNumber: 198,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
+                                                        className: "text-[12px] opacity-60",
+                                                        children: v.time
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                                        lineNumber: 199,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/pages/dashboard/index.tsx",
+                                                lineNumber: 197,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/index.tsx",
-                                            lineNumber: 173,
+                                            lineNumber: 192,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 151,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$divider__["Divider"], {}, void 0, false, {
                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 179,
+                                    lineNumber: 204,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("h1", {
-                                        className: "text-[20px] sm:text-[14px] lg:text-[20px] font-medium",
-                                        children: v.title
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                                        className: "rounded-md",
+                                        disableAnimation: true,
+                                        isLoaded: isLoaded,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("h1", {
+                                            className: "text-[18px] sm:text-[14px] lg:text-[18px] font-medium",
+                                            children: v.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/pages/dashboard/index.tsx",
+                                            lineNumber: 212,
+                                            columnNumber: 19
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/pages/dashboard/index.tsx",
-                                        lineNumber: 182,
+                                        lineNumber: 207,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 206,
                                     columnNumber: 15
                                 }, this),
-                                v.bought && /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$button__["Button"], {
-                                    color: "primary",
-                                    radius: "sm",
-                                    className: "text-white",
-                                    children: "Go to the lesson"
+                                v.bought && /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                                    className: "rounded-md",
+                                    disableAnimation: true,
+                                    isLoaded: isLoaded,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$button__["Button"], {
+                                        color: "primary",
+                                        radius: "sm",
+                                        size: "md",
+                                        className: "text-white w-full",
+                                        children: "Go to the lesson"
+                                    }, void 0, false, {
+                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                        lineNumber: 225,
+                                        columnNumber: 19
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 189,
+                                    lineNumber: 220,
+                                    columnNumber: 17
+                                }, this),
+                                !v.bought && /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                                    className: "rounded-md",
+                                    disableAnimation: true,
+                                    isLoaded: isLoaded,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                                        className: "flex w-full justify-between items-center",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("button", {
+                                                className: " basis-[49%] text-[14px] cursor-pointer rounded-lg h-[40px] border-1 w-full",
+                                                children: "Read More"
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/dashboard/index.tsx",
+                                                lineNumber: 243,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("button", {
+                                                className: " basis-[49%] text-[14px] cursor-pointer rounded-lg h-[40px] border-1 w-full",
+                                                children: "Get Started"
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/dashboard/index.tsx",
+                                                lineNumber: 246,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                        lineNumber: 242,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/pages/dashboard/index.tsx",
+                                    lineNumber: 237,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -1405,7 +1494,7 @@ function IndexPage() {
                                 size: 35
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/index.tsx",
-                                lineNumber: 198,
+                                lineNumber: 257,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
@@ -1418,28 +1507,28 @@ function IndexPage() {
                                         size: 20
                                     }, void 0, false, {
                                         fileName: "[project]/pages/dashboard/index.tsx",
-                                        lineNumber: 209,
+                                        lineNumber: 268,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 206,
+                                    lineNumber: 265,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/index.tsx",
-                                lineNumber: 205,
+                                lineNumber: 264,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/dashboard/index.tsx",
-                        lineNumber: 197,
+                        lineNumber: 256,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/pages/dashboard/index.tsx",
-                    lineNumber: 196,
+                    lineNumber: 255,
                     columnNumber: 9
                 }, this)
             ]

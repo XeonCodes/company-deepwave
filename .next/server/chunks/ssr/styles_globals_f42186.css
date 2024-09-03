@@ -891,6 +891,18 @@ img, video {
   height: 100vh;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[45px\] {
+  height: 45px;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
 .max-h-64 {
   max-height: 16rem;
 }
@@ -1258,6 +1270,26 @@ img, video {
 
 .basis-\[34\%\] {
   flex-basis: 34%;
+}
+
+.basis-\[45\%\] {
+  flex-basis: 45%;
+}
+
+.basis-\[47\%\] {
+  flex-basis: 47%;
+}
+
+.basis-\[48\%\] {
+  flex-basis: 48%;
+}
+
+.basis-\[40\%\] {
+  flex-basis: 40%;
+}
+
+.basis-\[49\%\] {
+  flex-basis: 49%;
 }
 
 .table-auto {
@@ -2370,6 +2402,10 @@ img, video {
   padding: 1rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .\!px-1 {
   padding-left: .25rem !important;
   padding-right: .25rem !important;
@@ -2559,6 +2595,10 @@ img, video {
   padding-top: 1px;
 }
 
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2673,6 +2713,10 @@ img, video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .font-black {
@@ -7892,6 +7936,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   .md\:p-5 {
     padding: 1.25rem;
   }
+
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
 }
 
 @media (width >= 1024px) {
@@ -7946,6 +7994,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-\[18px\] {
+    font-size: 18px;
   }
 }
 

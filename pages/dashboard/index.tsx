@@ -138,30 +138,48 @@ export default function IndexPage() {
             >
               {/* Top */}
               <div className="flex items-center opacity-60 justify-between">
-                <p className="text-[11px]">{v.category}</p>
+                <Skeleton
+                  className="rounded-md"
+                  disableAnimation
+                  isLoaded={isLoaded}
+                >
+                  <p className="text-[11px]">{v.category}</p>
+                </Skeleton>
                 <IoIosMore />
               </div>
 
               <div className="flex items-start sm:flex-col lg:flex-row  justify-between">
                 <div className="flex gap-3">
-                  <div
-                    className={`${v.bought ? "bg-purple-200" : "bg-zinc-100"} flex shrink-0 items-center justify-center rounded-lg h-[32px] w-[32px]`}
+                  <Skeleton
+                    className="rounded-md"
+                    disableAnimation
+                    isLoaded={isLoaded}
                   >
-                    <PiGraduationCapFill
-                      size={18}
-                      color={`${v.bought ? "black" : "grey"}`}
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <div className=" flex items-center gap-1">
-                      <HiOutlineCalendarDays
-                        size={14}
-                        className=" opacity-60"
+                    <div
+                      className={`${v.bought ? "bg-purple-200" : "bg-zinc-100"} flex shrink-0 items-center justify-center rounded-lg h-[32px] w-[32px]`}
+                    >
+                      <PiGraduationCapFill
+                        size={18}
+                        color={`${v.bought ? "black" : "grey"}`}
                       />
-                      <p className="text-[12px] opacity-60">
-                        {v.start} - {v.end}
-                      </p>
                     </div>
+                  </Skeleton>
+                  <div className="flex flex-col gap-1">
+                    <Skeleton
+                      className="rounded-md"
+                      disableAnimation
+                      isLoaded={isLoaded}
+                    >
+                      <div className=" flex items-center gap-1">
+                        <HiOutlineCalendarDays
+                          size={14}
+                          className=" opacity-60"
+                        />
+                        <p className="text-[12px] opacity-60">
+                          {v.start} - {v.end}
+                        </p>
+                      </div>
+                    </Skeleton>
                     <ProfileImgDetailsSmall
                       isLoaded={isLoaded}
                       name={sessionData?.tutor}
@@ -170,36 +188,66 @@ export default function IndexPage() {
                     />
                   </div>
                 </div>
-                <div className="ml-0 sm:ml-11 lg:ml-0 mt-0 sm:mt-1 lg:mt-0 flex items-center gap-1">
-                  <IoTimeOutline size={14} className=" opacity-60" />
-                  <p className="text-[12px] opacity-60">{v.time}</p>
-                </div>
+
+                <Skeleton
+                  className="rounded-md"
+                  disableAnimation
+                  isLoaded={isLoaded}
+                >
+                  <div className="ml-0 sm:ml-11 lg:ml-0 mt-0 sm:mt-1 lg:mt-0 flex items-center gap-1">
+                    <IoTimeOutline size={14} className=" opacity-60" />
+                    <p className="text-[12px] opacity-60">{v.time}</p>
+                  </div>
+                </Skeleton>
               </div>
 
               <Divider />
 
               <div>
-                <h1 className="text-[18px] sm:text-[14px] lg:text-[18px] font-medium">
-                  {v.title}
-                </h1>
+                <Skeleton
+                  className="rounded-md"
+                  disableAnimation
+                  isLoaded={isLoaded}
+                >
+                  <h1 className="text-[18px] sm:text-[14px] lg:text-[18px] font-medium">
+                    {v.title}
+                  </h1>
+                </Skeleton>
               </div>
 
               {/* Actions */}
               {v.bought && (
-                <Button color="primary" radius="sm" className="text-white">
-                  Go to the lesson
-                </Button>
+                <Skeleton
+                  className="rounded-md"
+                  disableAnimation
+                  isLoaded={isLoaded}
+                >
+                  <Button
+                    color="primary"
+                    radius="sm"
+                    size="md"
+                    className="text-white w-full"
+                  >
+                    Go to the lesson
+                  </Button>
+                </Skeleton>
               )}
 
               {!v.bought && (
-                <div className="flex justify-between items-center">
-                  <button className=" basis-[49%] text-[14px] cursor-pointer rounded-lg h-[40px] border-1 w-full">
-                    Read More
-                  </button>
-                  <button className=" basis-[49%] text-[14px] cursor-pointer rounded-lg h-[40px] border-1 w-full">
-                    Get Started
-                  </button>
-                </div>
+                <Skeleton
+                  className="rounded-md"
+                  disableAnimation
+                  isLoaded={isLoaded}
+                >
+                  <div className="flex w-full justify-between items-center">
+                    <button className=" basis-[49%] text-[14px] cursor-pointer rounded-lg h-[40px] border-1 w-full">
+                      Read More
+                    </button>
+                    <button className=" basis-[49%] text-[14px] cursor-pointer rounded-lg h-[40px] border-1 w-full">
+                      Get Started
+                    </button>
+                  </div>
+                </Skeleton>
               )}
             </div>
           ))}
