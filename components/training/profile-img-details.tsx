@@ -20,14 +20,14 @@ export const ProfileImgDetails = ({
       {/* Image Div */}
       <Skeleton className="rounded-full" disableAnimation isLoaded={isLoaded}>
         <div
-          className={`bg-background object-cover ${`h-[${size}px]`} ${`w-[${size}px]`} rounded-full`}
+          className={`relative ${size}px ${size}px rounded-full overflow-hidden`}
+          style={{ width: size, height: size }}
         >
           <Image
-            width={size}
-            height={size}
             alt="dp"
-            className={`h-[${size}px] w-[${size}px] rounded-full object-cover`}
+            className={`object-cover`}
             src={`/assets/${img}`}
+            layout="fill"
           />
         </div>
       </Skeleton>

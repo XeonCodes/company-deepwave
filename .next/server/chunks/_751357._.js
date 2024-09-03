@@ -59,7 +59,7 @@ async function handler(req, res) {
     session.tutor = "Luciana A.";
     session.tutorImg = "lady.jpg";
     session.tutorTitle = "UI UX tutor";
-    session.tutorEmail = "tutor@deepwave.com";
+    session.tutorEmail = "uiux@deepwave.com";
     session.fullname = fullname;
     await session.save();
     res.status(200).json({

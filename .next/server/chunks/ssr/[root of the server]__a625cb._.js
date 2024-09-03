@@ -285,16 +285,21 @@ const ProfileImgDetails = ({ isLoaded, name, title, img, size })=>{
                 disableAnimation: true,
                 isLoaded: isLoaded,
                 children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                    className: `bg-background object-cover ${`h-[${size}px]`} ${`w-[${size}px]`} rounded-full`,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                    className: `relative ${size}px ${size}px rounded-full overflow-hidden`,
+                    style: {
                         width: size,
-                        height: size,
+                        height: size
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        // width={size}
+                        // height={size}
                         alt: "dp",
-                        className: `h-[${size}px] w-[${size}px] rounded-full object-cover`,
-                        src: `/assets/${img}`
+                        className: `object-cover`,
+                        src: `/assets/${img}`,
+                        layout: "fill"
                     }, void 0, false, {
                         fileName: "[project]/components/training/profile-img-details.tsx",
-                        lineNumber: 25,
+                        lineNumber: 26,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
@@ -319,7 +324,7 @@ const ProfileImgDetails = ({ isLoaded, name, title, img, size })=>{
                             children: name
                         }, void 0, false, {
                             fileName: "[project]/components/training/profile-img-details.tsx",
-                            lineNumber: 37,
+                            lineNumber: 39,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
@@ -327,18 +332,18 @@ const ProfileImgDetails = ({ isLoaded, name, title, img, size })=>{
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/components/training/profile-img-details.tsx",
-                            lineNumber: 40,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/training/profile-img-details.tsx",
-                    lineNumber: 36,
+                    lineNumber: 38,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/training/profile-img-details.tsx",
-                lineNumber: 35,
+                lineNumber: 37,
                 columnNumber: 7
             }, this)
         ]
@@ -1086,7 +1091,7 @@ function IndexPage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                                className: " border-1 p-1 rounded-md",
+                                className: "border-1 p-1 rounded-md",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: `mailto:${sessionData?.tutorEmail}?subject=${encodeURIComponent("Deepwave Phanthom Student")}`,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$md__["MdOutlineEmail"], {

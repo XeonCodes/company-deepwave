@@ -2344,6 +2344,11 @@ img, video {
   stroke: hsl(var(--nextui-default-300) / .5);
 }
 
+.object-contain {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
   object-fit: cover;

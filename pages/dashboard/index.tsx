@@ -77,7 +77,7 @@ export default function IndexPage() {
               img={sessionData?.tutorImg}
               size={35}
             />
-            <div className=" border-1 p-1 rounded-md">
+            <div className="border-1 p-1 rounded-md">
               <Link
                 href={`mailto:${sessionData?.tutorEmail}?subject=${encodeURIComponent("Deepwave Phanthom Student")}`}
               >
