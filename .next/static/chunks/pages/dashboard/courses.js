@@ -1,9 +1,10 @@
 __turbopack_load_page_chunks__("/dashboard/courses", [
+  "static/chunks/[root of the server]__f2200c._.js",
   "static/chunks/node_modules_next_dist_compiled_b3ce17._.js",
-  "static/chunks/node_modules_next_dist_shared_lib_a77997._.js",
-  "static/chunks/node_modules_next_dist_client_2b90ce._.js",
+  "static/chunks/node_modules_next_dist_shared_lib_512688._.js",
+  "static/chunks/node_modules_next_dist_client_9a47c6._.js",
   "static/chunks/node_modules_next_dist_c3f6a0._.js",
-  "static/chunks/node_modules_next_315ff7._.js",
+  "static/chunks/node_modules_next_25f6e9._.js",
   "static/chunks/node_modules_react_1cad9b._.js",
   "static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e07.js",
   "static/chunks/node_modules_react-dom_f14d04._.js",
@@ -12,10 +13,13 @@ __turbopack_load_page_chunks__("/dashboard/courses", [
   "static/chunks/node_modules_react-icons_fi_index_mjs_739494._.js",
   "static/chunks/node_modules_react-icons_bi_index_mjs_41d22a._.js",
   "static/chunks/node_modules_react-icons_io5_index_mjs_e31071._.js",
+  "static/chunks/node_modules_react-icons_md_index_mjs_57194a._.js",
+  "static/chunks/node_modules_react-icons_pi_index_mjs_df545e._.js",
+  "static/chunks/node_modules_react-icons_hi2_index_mjs_6d8a1b._.js",
   "static/chunks/node_modules_react-icons_lib_75a63d._.js",
-  "static/chunks/node_modules_3d7d3e._.js",
-  "static/chunks/[root of the server]__ad79c4._.js",
-  "static/chunks/node_modules_next_dist_pages_57c83c._.js",
-  "static/chunks/[next]_entry_page-loader_ts_6d8d26._.js",
-  "static/chunks/[next]_entry_page-loader_ts_ba6d18._.js"
+  "static/chunks/node_modules_framer-motion_dist_es_201c82._.js",
+  "static/chunks/node_modules_5626a2._.js",
+  "static/chunks/node_modules_next_dist_pages_ce4400._.js",
+  "static/chunks/[next]_entry_page-loader_ts_588b2f._.js",
+  "static/chunks/[next]_entry_page-loader_ts_9bc5f3._.js"
 ])
