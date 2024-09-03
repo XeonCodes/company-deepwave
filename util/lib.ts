@@ -10,6 +10,7 @@ export interface SessionData {
   tutorEmail?: string;
   fullname?: string;
   userImage?: string;
+  tutors?: object;
   isPro?: boolean;
   isLoggedIn: boolean;
   isBlocked?: boolean;

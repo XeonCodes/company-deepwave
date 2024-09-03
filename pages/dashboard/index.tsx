@@ -3,11 +3,9 @@ import { siteConfig } from "@/config/site";
 import TrainingDashboardLayout from "@/layouts/training";
 import { Divider } from "@nextui-org/divider";
 import { Skeleton } from "@nextui-org/skeleton";
-import Image from "next/image";
 import router from "next/router";
 import { useState, useEffect } from "react";
 import { FiSettings } from "react-icons/fi";
-import { toast } from "react-toastify";
 import { MdOutlineEmail } from "react-icons/md";
 import Link from "next/link";
 import { IoIosMore } from "react-icons/io";
@@ -252,17 +250,26 @@ export default function IndexPage() {
             </div>
           ))}
         </div>
-        <div className="w-full basis-[34%] shadow-none sm:shadow-md order-2 sm:order-3">
-          <div className="card bg-card p-3 flex items-center justify-between md:p-5 ">
-            <ProfileImgDetails
-              title={sessionData?.tutorTitle}
-              isLoaded={isLoaded}
-              name={sessionData?.tutor}
-              img={"lady.jpg"}
-              size={35}
-            />
+        <div className="w-full basis-[34%] flex flex-col gap-3 order-2 sm:order-3">
+          <div
+            className={`card ${sessionData?.tutors?.length < 1 && "opacity-45"} shadow-none sm:shadow-md bg-card p-3 flex items-start justify-between md:p-5`}
+          >
+            <div className="flex flex-col gap-2">
+              <ProfileImgDetails
+                title={sessionData?.tutorTitle}
+                isLoaded={isLoaded}
+                name={sessionData?.tutor}
+                img={"lady.jpg"}
+                size={35}
+              />
+              <p className="text-[13px]">
+                You have no active course yet. A tutor would be assigned to you
+                once you enroll for a course.
+              </p>
+            </div>
             <div className="border-1 p-2 rounded-md">
               <Link
+                className={`${sessionData?.tutors?.length < 1 && "pointer-events-none"}`}
                 href={`mailto:${sessionData?.tutorEmail}?subject=${encodeURIComponent("Deepwave Phanthom Student")}`}
               >
                 <MdOutlineEmail
@@ -273,6 +280,12 @@ export default function IndexPage() {
               </Link>
             </div>
           </div>
+
+          {/* <div
+            className={`shadow-none sm:shadow-md card bg-card p-3 flex items-start justify-between md:p-5`}
+          >
+            <p>kcnc</p>
+          </div> */}
         </div>
       </section>
     </TrainingDashboardLayout>

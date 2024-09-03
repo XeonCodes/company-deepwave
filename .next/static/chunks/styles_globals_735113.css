@@ -703,6 +703,10 @@ img, video {
   margin-bottom: 100px;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -3004,6 +3008,10 @@ img, video {
 
 .opacity-disabled {
   opacity: var(--nextui-disabled-opacity);
+}
+
+.opacity-45 {
+  opacity: .45;
 }
 
 .shadow {

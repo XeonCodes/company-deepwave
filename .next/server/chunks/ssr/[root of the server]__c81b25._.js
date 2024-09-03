@@ -233,6 +233,7 @@ function App({ Component, pageProps }) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$toastify__["ToastContainer"], {
+                    limit: 1,
                     autoClose: 2000
                 }, void 0, false, {
                     fileName: "[project]/pages/_app.tsx",
@@ -1484,7 +1485,7 @@ function IndexPage() {
                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
                     className: "w-full basis-[34%] shadow-none sm:shadow-md order-2 sm:order-3",
                     children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                        className: "card bg-card p-3 flex items-center justify-between md:p-5 ",
+                        className: `card ${sessionData?.tutors?.length < 1 && "opacity-45"} bg-card p-3 flex items-center justify-between md:p-5`,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$profile$2d$img$2d$details$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ProfileImgDetails"], {
                                 title: sessionData?.tutorTitle,
@@ -1494,12 +1495,13 @@ function IndexPage() {
                                 size: 35
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/index.tsx",
-                                lineNumber: 257,
+                                lineNumber: 259,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
                                 className: "border-1 p-2 rounded-md",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    className: `${sessionData?.tutors?.length < 1 && "pointer-events-none"}`,
                                     href: `mailto:${sessionData?.tutorEmail}?subject=${encodeURIComponent("Deepwave Phanthom Student")}`,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$md__["MdOutlineEmail"], {
                                         role: "presentation",
@@ -1507,17 +1509,17 @@ function IndexPage() {
                                         size: 20
                                     }, void 0, false, {
                                         fileName: "[project]/pages/dashboard/index.tsx",
-                                        lineNumber: 268,
+                                        lineNumber: 271,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 265,
+                                    lineNumber: 267,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/index.tsx",
-                                lineNumber: 264,
+                                lineNumber: 266,
                                 columnNumber: 13
                             }, this)
                         ]

@@ -57,6 +57,7 @@ async function handler(req, res) {
     session.isPro = isPro;
     session.isLoggedIn = true;
     session.tutor = "Luciana A.";
+    session.tutors = [];
     session.tutorImg = "lady.jpg";
     session.tutorTitle = "UI UX tutor";
     session.tutorEmail = "uiux@deepwave.com";
