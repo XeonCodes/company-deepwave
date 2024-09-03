@@ -665,6 +665,14 @@ img, video {
   top: var(--navbar-height);
 }
 
+.-left-\[800px\] {
+  left: -800px;
+}
+
+.right-0 {
+  right: 0;
+}
+
 .-z-30 {
   z-index: -30;
 }
@@ -1036,6 +1044,14 @@ img, video {
   height: 100vh;
 }
 
+.h-\[sizepx\] {
+  height: sizepx;
+}
+
+.h-\[35px\] {
+  height: 35px;
+}
+
 .max-h-64 {
   max-height: 16rem;
 }
@@ -1220,6 +1236,14 @@ img, video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[sizepx\] {
+  width: sizepx;
+}
+
+.w-\[35px\] {
+  width: 35px;
 }
 
 .min-w-10 {
@@ -1464,6 +1488,21 @@ img, video {
 
 .translate-y-1\/2 {
   --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-full {
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-full {
+  --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2674,6 +2713,10 @@ img, video {
 
 .pt-px {
   padding-top: 1px;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -7979,6 +8022,11 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
   .md\:max-w-\[1100px\] {
     max-width: 1100px;
+  }
+
+  .md\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:p-5 {

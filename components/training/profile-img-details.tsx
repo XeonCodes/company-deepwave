@@ -7,22 +7,26 @@ export const ProfileImgDetails = ({
   name,
   title,
   img,
+  size,
 }: {
   isLoaded: boolean;
   name: any;
   title: string;
   img: string;
+  size: number;
 }) => {
   return (
     <div className="flex items-center gap-2">
       {/* Image Div */}
       <Skeleton className="rounded-full" disableAnimation isLoaded={isLoaded}>
-        <div className="bg-background h-[45px] w-[45px] rounded-full">
+        <div
+          className={`bg-background object-cover ${`h-[${size}px]`} ${`w-[${size}px]`} rounded-full`}
+        >
           <Image
-            width={45}
-            height={45}
+            width={size}
+            height={size}
             alt="dp"
-            className="h-[45px] w-[45px] rounded-full object-cover"
+            className={`h-[${size}px] w-[${size}px] rounded-full object-cover`}
             src={`/assets/${img}`}
           />
         </div>

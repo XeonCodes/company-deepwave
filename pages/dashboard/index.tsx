@@ -44,6 +44,7 @@ export default function IndexPage() {
                 isLoaded={isLoaded}
                 name={sessionData?.fullname}
                 img="man.jpg"
+                size={45}
               />
               <FiSettings size={13} />
             </div>
@@ -73,9 +74,10 @@ export default function IndexPage() {
               isLoaded={isLoaded}
               name={sessionData?.tutor}
               img={sessionData?.tutorImg}
+              size={35}
             />
             <div className=" border-1 p-1 rounded-md">
-              <MdOutlineEmail className="opacity-70" size={24} />
+              <MdOutlineEmail className="opacity-70" size={20} />
             </div>
           </div>
         </div>

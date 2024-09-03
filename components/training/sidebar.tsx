@@ -9,13 +9,7 @@ interface LinkTypes {
   path: string;
 }
 
-export const Sidebar = ({
-  sideNavLeft,
-  closeSideNav,
-}: {
-  sideNavLeft: any;
-  closeSideNav: () => void;
-}) => {
+export const Sidebar = ({ closeSideNav }: { closeSideNav: () => void }) => {
   const router = useRouter();
 
   const [active, setActive] = useState("");
@@ -52,10 +46,8 @@ export const Sidebar = ({
   ];
 
   return (
-    <nav
-      className={`w-full flex transition-all ${sideNavLeft} md:left-0 duration-700 sm:duration-0 ease-in-out flex-col md:hidden bg-background h-[100%] absolute top-0 md:max-w-[1100px] xl:px-0`}
-    >
-      <ul className="mt-5 flex flex-col gap-7">
+    <nav className={`h-[100%] xl:px-0`}>
+      <ul className=" flex flex-col gap-7">
         <div>
           {Links.map((v: any, i: any) => (
             <Link href={v.path} role="presentation" onClick={closeSideNav}>
