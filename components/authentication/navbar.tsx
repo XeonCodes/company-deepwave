@@ -4,6 +4,7 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { navbarPadding } from "../primitives";
 import Image from "next/image";
+import { BiSolidMessageSquareCheck } from "react-icons/bi";
 
 function Navbar() {
   return (
@@ -14,15 +15,11 @@ function Navbar() {
         href={`${siteConfig.pathLinks.landingPage}`}
         className="flex items-center gap-1"
       >
-        <Image
-          width={48}
-          height={48}
-          quality={40}
-          className="w-12"
-          src="/assets/logo1.png"
-          alt="logo"
+        <BiSolidMessageSquareCheck
+          color={siteConfig.appColors.primaryColor}
+          size={47}
         />
-        <h1 className={`text-[32px] flex text-black font-black italic`}>
+        <h1 className={`text-[30px] flex text-black font-black italic`}>
           {siteConfig.name.toUpperCase()}
         </h1>
       </Link>

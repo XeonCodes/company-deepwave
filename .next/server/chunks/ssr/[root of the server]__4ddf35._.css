@@ -2828,6 +2828,10 @@ img, video {
   line-height: 1.75rem;
 }
 
+.text-\[30px\] {
+  font-size: 30px;
+}
+
 .font-black {
   font-weight: 900;
 }

@@ -593,12 +593,13 @@ var __TURBOPACK__esm__external__react$2d$icons$2f$md__ = __turbopack_external_im
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/config/site.ts [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$primitives$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/primitives.ts [ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [ssr] (ecmascript)");
+var __TURBOPACK__esm__external__react$2d$icons$2f$bi__ = __turbopack_external_import__("react-icons/bi");
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
     __TURBOPACK__esm__external__react$2d$icons$2f$md__,
-    __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$primitives$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__
+    __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$primitives$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__,
+    __TURBOPACK__esm__external__react$2d$icons$2f$bi__
 ]);
-[__TURBOPACK__esm__external__react$2d$icons$2f$md__, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$primitives$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+[__TURBOPACK__esm__external__react$2d$icons$2f$md__, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$primitives$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__, __TURBOPACK__esm__external__react$2d$icons$2f$bi__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
 ;
@@ -614,30 +615,26 @@ function Navbar() {
                 href: `${__TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.landingPage}`,
                 className: "flex items-center gap-1",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        width: 48,
-                        height: 48,
-                        quality: 40,
-                        className: "w-12",
-                        src: "/assets/logo1.png",
-                        alt: "logo"
+                    /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$bi__["BiSolidMessageSquareCheck"], {
+                        color: __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].appColors.primaryColor,
+                        size: 47
                     }, void 0, false, {
                         fileName: "[project]/components/authentication/navbar.tsx",
-                        lineNumber: 17,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("h1", {
-                        className: `text-[32px] flex text-black font-black italic`,
+                        className: `text-[30px] flex text-black font-black italic`,
                         children: __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].name.toUpperCase()
                     }, void 0, false, {
                         fileName: "[project]/components/authentication/navbar.tsx",
-                        lineNumber: 25,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/authentication/navbar.tsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -647,18 +644,18 @@ function Navbar() {
                     size: 28
                 }, void 0, false, {
                     fileName: "[project]/components/authentication/navbar.tsx",
-                    lineNumber: 30,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/authentication/navbar.tsx",
-                lineNumber: 29,
+                lineNumber: 26,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/authentication/navbar.tsx",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
