@@ -26,7 +26,7 @@ export function middleware(request: NextRequest) {
     // Check for the session data (you can use cookies or headers)
     const session = request.cookies.get(process.env.COOKIE_NAME!); // Or use another method to check session
 
-    // If session does not exist, redirect to the login page
+    // If session exists, redirect to the training dashboard
     if (session) {
       return NextResponse.redirect(
         new URL(`${siteConfig.pathLinks.trainingDashboard}`, request.url)
@@ -40,5 +40,5 @@ export function middleware(request: NextRequest) {
 
 // Apply middleware to the entire site or specific paths
 export const config = {
-  matcher: ["/dashboard/:path*", "/dashboard"],
+  matcher: ["/dashboard/:path*", "/dashboard", "/signin", "/register"],
 };

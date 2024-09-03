@@ -20,6 +20,16 @@
           "locale": false,
           "originalSource": "/dashboard",
           "regexp": "^/dashboard$"
+        },
+        {
+          "locale": false,
+          "originalSource": "/signin",
+          "regexp": "^/signin$"
+        },
+        {
+          "locale": false,
+          "originalSource": "/register",
+          "regexp": "^/register$"
         }
       ]
     }

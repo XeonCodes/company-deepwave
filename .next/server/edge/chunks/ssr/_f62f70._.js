@@ -62,7 +62,7 @@ function middleware(request) {
     } else if (protectOnboard.some((route)=>pathname.startsWith(route))) {
         // Check for the session data (you can use cookies or headers)
         const session = request.cookies.get(process.env.COOKIE_NAME); // Or use another method to check session
-        // If session does not exist, redirect to the login page
+        // If session exists, redirect to the training dashboard
         if (session) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$spec$2d$extension$2f$response$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL(`${__TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$middleware$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.trainingDashboard}`, request.url));
         }
@@ -73,7 +73,9 @@ function middleware(request) {
 const config = {
     matcher: [
         "/dashboard/:path*",
-        "/dashboard"
+        "/dashboard",
+        "/signin",
+        "/register"
     ]
 };
 

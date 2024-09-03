@@ -18,6 +18,14 @@
         {
           "locale": false,
           "originalSource": "/dashboard"
+        },
+        {
+          "locale": false,
+          "originalSource": "/signin"
+        },
+        {
+          "locale": false,
+          "originalSource": "/register"
         }
       ]
     }
