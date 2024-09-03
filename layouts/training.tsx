@@ -32,7 +32,7 @@ export default function TrainingDashboardLayout({
         {/* SideBar */}
         <div
           className={`bg-background pt-5 transition-transform z-20 w-full transform ${
-            isSideNavOpen ? "translate-x-0" : "translate-x-full"
+            isSideNavOpen ? "translate-x-0" : "translate-x-full hidden"
           } md:translate-x-0 duration-700 ease-in-out md:hidden absolute top-0 right-0 h-full`}
         >
           <Sidebar closeSideNav={toggleSideNav} />

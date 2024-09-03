@@ -1246,6 +1246,10 @@ img, video {
   width: 100vw;
 }
 
+.w-0 {
+  width: 0;
+}
+
 .min-w-10 {
   min-width: 2.5rem;
 }

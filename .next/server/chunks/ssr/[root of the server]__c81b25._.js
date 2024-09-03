@@ -896,7 +896,7 @@ function TrainingDashboardLayout({ children }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                        className: `bg-background pt-5 transition-transform z-20 w-full transform ${isSideNavOpen ? "translate-x-0" : "translate-x-full"} md:translate-x-0 duration-700 ease-in-out md:hidden absolute top-0 right-0 h-full`,
+                        className: `bg-background pt-5 transition-transform z-20 w-full transform ${isSideNavOpen ? "translate-x-0" : "translate-x-full hidden"} md:translate-x-0 duration-700 ease-in-out md:hidden absolute top-0 right-0 h-full`,
                         children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$sidebar$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["Sidebar"], {
                             closeSideNav: toggleSideNav
                         }, void 0, false, {
