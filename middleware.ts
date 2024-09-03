@@ -10,6 +10,11 @@ export function middleware(request: NextRequest) {
   // Define routes that require authentication
   const protectedRoutes = ["/dashboard"];
   const protectOnboard = ["/signin", "/register"];
+  const protectUnavailableRoutes = [
+    siteConfig.pathLinks.trainingTools,
+    siteConfig.pathLinks.trainingNotificaiton,
+    siteConfig.pathLinks.trainingProfile,
+  ];
 
   // Check if the request is for a protected route
   if (protectedRoutes.some((route) => pathname.startsWith(route))) {
@@ -20,6 +25,12 @@ export function middleware(request: NextRequest) {
     if (!session) {
       return NextResponse.redirect(
         new URL(`${siteConfig.pathLinks.signin}`, request.url)
+      );
+    } else if (
+      protectUnavailableRoutes.some((route) => pathname.startsWith(route))
+    ) {
+      return NextResponse.redirect(
+        new URL(`${siteConfig.pathLinks.trainingDashboard}`, request.url)
       );
     }
   } else if (protectOnboard.some((route) => pathname.startsWith(route))) {
