@@ -46,10 +46,7 @@ async function CheckSession(req, res) {
         });
     } else {
         res.status(200).json({
-            isLoggedIn: true,
-            fullname: session.fullname,
-            email: session.email,
-            isPro: session.isPro
+            sessionData: session
         });
     }
 }

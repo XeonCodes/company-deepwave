@@ -4,6 +4,10 @@ import { env } from "process";
 export interface SessionData {
   userID?: string;
   email?: string;
+  tutor?: string;
+  tutorImg?: string;
+  tutorTitle?: string;
+  tutorEmail?: string;
   fullname?: string;
   userImage?: string;
   isPro?: boolean;

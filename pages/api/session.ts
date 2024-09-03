@@ -13,10 +13,7 @@ export default async function CheckSession(
     res.status(200).json({ isLoggedIn: false });
   } else {
     res.status(200).json({
-      isLoggedIn: true,
-      fullname: session.fullname,
-      email: session.email,
-      isPro: session.isPro,
+      sessionData: session,
     });
   }
 }

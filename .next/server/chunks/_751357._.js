@@ -56,6 +56,10 @@ async function handler(req, res) {
     session.email = email;
     session.isPro = isPro;
     session.isLoggedIn = true;
+    session.tutor = "Luciana A.";
+    session.tutorImg = "lady.jpg";
+    session.tutorTitle = "UI UX tutor";
+    session.tutorEmail = "tutor@deepwave.com";
     session.fullname = fullname;
     await session.save();
     res.status(200).json({

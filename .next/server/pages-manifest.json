@@ -10,5 +10,6 @@
   "/signin": "pages/signin.js",
   "/api/login": "pages/api/login.js",
   "/dashboard/purchase": "pages/dashboard/purchase.js",
-  "/dashboard/notification": "pages/dashboard/notification.js"
+  "/dashboard/notification": "pages/dashboard/notification.js",
+  "/_error": "pages/_error.js"
 }

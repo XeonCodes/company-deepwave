@@ -258,6 +258,99 @@ const fonts = {
 __turbopack_async_result__();
 } catch(e) { __turbopack_async_result__(e); } }, false);
 })()),
+"[project]/components/training/profile-img-details.tsx [ssr] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, a: __turbopack_async_module__, x: __turbopack_external_require__, y: __turbopack_external_import__ }) => (() => {
+"use strict";
+
+__turbopack_async_module__(async (__turbopack_handle_async_dependencies__, __turbopack_async_result__) => { try {
+__turbopack_esm__({
+    "ProfileImgDetails": ()=>ProfileImgDetails
+});
+var __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__ = __turbopack_external_require__("react/jsx-dev-runtime", true);
+var __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__ = __turbopack_external_import__("@nextui-org/skeleton");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [ssr] (ecmascript)");
+var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
+    __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__
+]);
+[__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+"__TURBOPACK__ecmascript__hoisting__location__";
+;
+;
+;
+const ProfileImgDetails = ({ isLoaded, name, title, img })=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+        className: "flex items-center gap-2",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                className: "rounded-full",
+                disableAnimation: true,
+                isLoaded: isLoaded,
+                children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                    className: "bg-background h-[45px] w-[45px] rounded-full",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        width: 45,
+                        height: 45,
+                        alt: "dp",
+                        className: "h-[45px] w-[45px] rounded-full object-cover",
+                        src: `/assets/${img}`
+                    }, void 0, false, {
+                        fileName: "[project]/components/training/profile-img-details.tsx",
+                        lineNumber: 21,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/training/profile-img-details.tsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/training/profile-img-details.tsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                className: "rounded-md",
+                disableAnimation: true,
+                isLoaded: isLoaded,
+                children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                    className: " leading-4",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("h1", {
+                            className: "text-[15px] sm:text-[13px] lg:text-[15px] font-medium",
+                            children: name
+                        }, void 0, false, {
+                            fileName: "[project]/components/training/profile-img-details.tsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
+                            className: "text-[13px] sm:text-[12px] lg:text-[13px] opacity-70",
+                            children: title
+                        }, void 0, false, {
+                            fileName: "[project]/components/training/profile-img-details.tsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/training/profile-img-details.tsx",
+                    lineNumber: 32,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/training/profile-img-details.tsx",
+                lineNumber: 31,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/training/profile-img-details.tsx",
+        lineNumber: 17,
+        columnNumber: 5
+    }, this);
+};
+__turbopack_async_result__();
+} catch(e) { __turbopack_async_result__(e); } }, false);
+})()),
 "[project]/config/site.ts [ssr] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__ }) => (() => {
 "use strict";
 
@@ -840,14 +933,18 @@ var __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__ = __turbopack_ex
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/router.js [ssr] (ecmascript)");
 var __TURBOPACK__commonjs__external__react__ = __turbopack_external_require__("react", true);
 var __TURBOPACK__esm__external__react$2d$icons$2f$fi__ = __turbopack_external_import__("react-icons/fi");
+var __TURBOPACK__esm__external__react$2d$icons$2f$md__ = __turbopack_external_import__("react-icons/md");
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
+    __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$profile$2d$img$2d$details$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__,
     __TURBOPACK__imported__module__$5b$project$5d2f$layouts$2f$training$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__,
     __TURBOPACK__esm__external__$40$nextui$2d$org$2f$divider__,
     __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__,
-    __TURBOPACK__esm__external__react$2d$icons$2f$fi__
+    __TURBOPACK__esm__external__react$2d$icons$2f$fi__,
+    __TURBOPACK__esm__external__react$2d$icons$2f$md__
 ]);
-[__TURBOPACK__imported__module__$5b$project$5d2f$layouts$2f$training$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__, __TURBOPACK__esm__external__$40$nextui$2d$org$2f$divider__, __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__, __TURBOPACK__esm__external__react$2d$icons$2f$fi__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+[__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$profile$2d$img$2d$details$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__, __TURBOPACK__imported__module__$5b$project$5d2f$layouts$2f$training$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__, __TURBOPACK__esm__external__$40$nextui$2d$org$2f$divider__, __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__, __TURBOPACK__esm__external__react$2d$icons$2f$fi__, __TURBOPACK__esm__external__react$2d$icons$2f$md__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
 "__TURBOPACK__ecmascript__hoisting__location__";
+;
 ;
 ;
 ;
@@ -869,10 +966,10 @@ function IndexPage() {
                 }
             });
             const result = await response.json();
-            if (!result.isLoggedIn) {
+            if (!result.sessionData.isLoggedIn) {
                 return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].push(`${__TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.signin}`);
             }
-            setSessionData(result);
+            setSessionData(result.sessionData);
             setIsLoaded(true);
         }
         Check();
@@ -882,104 +979,138 @@ function IndexPage() {
             className: "flex flex-col sm:flex-row w-full gap-3 items-start justify-between",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                    className: "w-full basis-[29%] flex flex-col gap-4 p-3 md:p-5 rounded-lg shadow-none sm:shadow-md bg-card order-3 sm:order-1",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                            className: "flex items-start justify-between",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$profile$2d$img$2d$details$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ProfileImgDetails"], {
-                                    title: "Student",
-                                    isLoaded: isLoaded,
-                                    name: sessionData?.fullname
+                    className: "w-full basis-[29%] rounded-lg shadow-none sm:shadow-md bg-card order-3 sm:order-1",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                        className: "p-3 md:p-5 flex flex-col gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                                className: "flex items-start justify-between",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$profile$2d$img$2d$details$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ProfileImgDetails"], {
+                                        title: "Student",
+                                        isLoaded: isLoaded,
+                                        name: sessionData?.fullname,
+                                        img: "man.jpg"
+                                    }, void 0, false, {
+                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                        lineNumber: 42,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$fi__["FiSettings"], {
+                                        size: 13
+                                    }, void 0, false, {
+                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                        lineNumber: 48,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/pages/dashboard/index.tsx",
+                                lineNumber: 41,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$divider__["Divider"], {}, void 0, false, {
+                                fileName: "[project]/pages/dashboard/index.tsx",
+                                lineNumber: 50,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
+                                className: "rounded-md",
+                                disableAnimation: true,
+                                isLoaded: isLoaded,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
+                                        children: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus vitae molestias nobis alias sapiente"
+                                    }, void 0, false, {
+                                        fileName: "[project]/pages/dashboard/index.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 17
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 40,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$fi__["FiSettings"], {
-                                    size: 13
-                                }, void 0, false, {
-                                    fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 45,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/pages/dashboard/index.tsx",
-                            lineNumber: 39,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$divider__["Divider"], {}, void 0, false, {
-                            fileName: "[project]/pages/dashboard/index.tsx",
-                            lineNumber: 47,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
-                            className: "rounded-md",
-                            disableAnimation: true,
-                            isLoaded: isLoaded,
-                            children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                                children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
-                                    children: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus vitae molestias nobis alias sapiente"
-                                }, void 0, false, {
-                                    fileName: "[project]/pages/dashboard/index.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 57,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/index.tsx",
-                                lineNumber: 50,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/pages/dashboard/index.tsx",
-                            lineNumber: 49,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/pages/dashboard/index.tsx",
-                    lineNumber: 37,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                    className: "w-full basis-[34%] rounded-lg shadow-none sm:shadow-md bg-card p-3 md:p-5 order-1 sm:order-2",
-                    children: "Center"
-                }, void 0, false, {
-                    fileName: "[project]/pages/dashboard/index.tsx",
-                    lineNumber: 58,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                    className: "w-full basis-[34%] shadow-none sm:shadow-mdp-3 md:p-5 order-2 sm:order-3",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                        className: "card bg-card ",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("p", {
-                            children: "s"
-                        }, void 0, false, {
-                            fileName: "[project]/pages/dashboard/index.tsx",
-                            lineNumber: 63,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/pages/dashboard/index.tsx",
-                        lineNumber: 62,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/pages/dashboard/index.tsx",
-                    lineNumber: 61,
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                    className: "w-full basis-[34%] rounded-lg shadow-none sm:shadow-md bg-card order-1 sm:order-2",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                        className: "p-3 md:p-5",
+                        children: "Center"
+                    }, void 0, false, {
+                        fileName: "[project]/pages/dashboard/index.tsx",
+                        lineNumber: 67,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/pages/dashboard/index.tsx",
+                    lineNumber: 66,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                    className: "w-full basis-[34%] shadow-none sm:shadow-md order-2 sm:order-3",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                        className: "card bg-card p-3 flex items-center justify-between md:p-5 ",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$profile$2d$img$2d$details$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ProfileImgDetails"], {
+                                title: sessionData?.tutorTitle,
+                                isLoaded: isLoaded,
+                                name: sessionData?.tutor,
+                                img: sessionData?.tutorImg
+                            }, void 0, false, {
+                                fileName: "[project]/pages/dashboard/index.tsx",
+                                lineNumber: 71,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                                className: " border-1 p-1 rounded-md",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$md__["MdOutlineEmail"], {
+                                    size: 24
+                                }, void 0, false, {
+                                    fileName: "[project]/pages/dashboard/index.tsx",
+                                    lineNumber: 78,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/pages/dashboard/index.tsx",
+                                lineNumber: 77,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/pages/dashboard/index.tsx",
+                        lineNumber: 70,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/pages/dashboard/index.tsx",
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/pages/dashboard/index.tsx",
-            lineNumber: 36,
+            lineNumber: 37,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/pages/dashboard/index.tsx",
-        lineNumber: 35,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }
@@ -989,4 +1120,4 @@ __turbopack_async_result__();
 
 };
 
-//# sourceMappingURL=%5Broot%20of%20the%20server%5D__3a5a96._.js.map
+//# sourceMappingURL=%5Broot%20of%20the%20server%5D__a625cb._.js.map

@@ -404,10 +404,6 @@ img, video {
   right: 0;
 }
 
-.-left-\[800px\] {
-  left: -800px;
-}
-
 .bottom-0 {
   bottom: 0;
 }
@@ -983,6 +979,10 @@ img, video {
   width: .875rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1063,14 +1063,6 @@ img, video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-36 {
-  width: 9rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .min-w-10 {
@@ -1579,16 +1571,12 @@ img, video {
   gap: 1.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-7 {
   gap: 1.75rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-0 {
@@ -1815,6 +1803,10 @@ img, video {
 
 .border-small {
   border-width: var(--nextui-border-width-small);
+}
+
+.border-1 {
+  border-width: 1px;
 }
 
 .border-x-\[calc\(theme\(spacing\.5\)\/2\)\] {
@@ -3640,6 +3632,11 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   color: #fff;
   font-weight: 600;
   width: 100%;
+}
+
+.card {
+  width: 100%;
+  border-radius: 8px;
 }
 
 .file\:cursor-pointer::file-selector-button {

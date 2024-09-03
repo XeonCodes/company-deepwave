@@ -1,3 +1,4 @@
+import { ProfileImgDetails } from "@/components/training/profile-img-details";
 import { siteConfig } from "@/config/site";
 import TrainingDashboardLayout from "@/layouts/training";
 import { Divider } from "@nextui-org/divider";
@@ -7,6 +8,7 @@ import router from "next/router";
 import { useState, useEffect } from "react";
 import { FiSettings } from "react-icons/fi";
 import { toast } from "react-toastify";
+import { MdOutlineEmail } from "react-icons/md";
 
 export default function IndexPage() {
   const [sessionData, setSessionData] = useState<any>(null);
@@ -21,10 +23,10 @@ export default function IndexPage() {
         },
       });
       const result = await response.json();
-      if (!result.isLoggedIn) {
+      if (!result.sessionData.isLoggedIn) {
         return router.push(`${siteConfig.pathLinks.signin}`);
       }
-      setSessionData(result);
+      setSessionData(result.sessionData);
       setIsLoaded(true);
     }
     Check();
@@ -33,61 +35,49 @@ export default function IndexPage() {
   return (
     <TrainingDashboardLayout>
       <section className="flex flex-col sm:flex-row w-full gap-3 items-start justify-between">
-        <div className="w-full basis-[29%] flex flex-col gap-4 p-3 md:p-5 rounded-lg shadow-none sm:shadow-md bg-card order-3 sm:order-1">
+        <div className="w-full basis-[29%] rounded-lg shadow-none sm:shadow-md bg-card order-3 sm:order-1">
           {/* Profile Details */}
-          <div className="flex items-start justify-between">
-            <div className="flex items-center gap-2">
-              {/* Image Div */}
-              <Skeleton
-                className="rounded-full"
-                disableAnimation
+          <div className="p-3 md:p-5 flex flex-col gap-4">
+            <div className="flex items-start justify-between">
+              <ProfileImgDetails
+                title="Student"
                 isLoaded={isLoaded}
-              >
-                <div className="bg-background h-[45px] w-[45px] rounded-full">
-                  <Image
-                    width={45}
-                    height={45}
-                    alt="dp"
-                    className="h-[45px] w-[45px] rounded-full object-cover"
-                    src={"/assets/lady.jpg"}
-                  />
-                </div>
-              </Skeleton>
-              {/* Text Div */}
-              <Skeleton
-                className="rounded-md"
-                disableAnimation
-                isLoaded={isLoaded}
-              >
-                <div className=" leading-4">
-                  <h1 className="text-[15px] sm:text-[13px] lg:text-[15px] font-medium">
-                    {sessionData?.fullname}
-                  </h1>
-                  <p className="text-[13px] sm:text-[12px] lg:text-[13px] opacity-70">
-                    Student
-                  </p>
-                </div>
-              </Skeleton>
+                name={sessionData?.fullname}
+                img="man.jpg"
+              />
+              <FiSettings size={13} />
             </div>
+            <Divider />
 
-            <FiSettings size={13} />
+            <Skeleton
+              className="rounded-md"
+              disableAnimation
+              isLoaded={isLoaded}
+            >
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Minus vitae molestias nobis alias sapiente
+                </p>
+              </div>
+            </Skeleton>
           </div>
-          <Divider />
-
-          <Skeleton className="rounded-md" disableAnimation isLoaded={isLoaded}>
-            <div>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-                vitae molestias nobis alias sapiente
-              </p>
+        </div>
+        <div className="w-full basis-[34%] rounded-lg shadow-none sm:shadow-md bg-card order-1 sm:order-2">
+          <div className="p-3 md:p-5">Center</div>
+        </div>
+        <div className="w-full basis-[34%] shadow-none sm:shadow-md order-2 sm:order-3">
+          <div className="card bg-card p-3 flex items-center justify-between md:p-5 ">
+            <ProfileImgDetails
+              title={sessionData?.tutorTitle}
+              isLoaded={isLoaded}
+              name={sessionData?.tutor}
+              img={sessionData?.tutorImg}
+            />
+            <div className=" border-1 p-1 rounded-md">
+              <MdOutlineEmail className="opacity-70" size={24} />
             </div>
-          </Skeleton>
-        </div>
-        <div className="w-full basis-[34%] rounded-lg shadow-none sm:shadow-md bg-card p-3 md:p-5 order-1 sm:order-2">
-          Center
-        </div>
-        <div className="w-full basis-[34%] rounded-lg shadow-none sm:shadow-md bg-card p-3 md:p-5 order-2 sm:order-3">
-          Right
+          </div>
         </div>
       </section>
     </TrainingDashboardLayout>
