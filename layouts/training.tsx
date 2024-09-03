@@ -32,7 +32,7 @@ export default function TrainingDashboardLayout({
           {children}
         </main>
 
-        {/* SideBar */}
+        {/* SideBarf */}
         <Sidebar sideNavLeft={sideNavLeft} />
       </div>
     </div>
