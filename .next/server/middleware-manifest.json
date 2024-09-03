@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/ssr/_dc37cc._.js",
+        "server/edge/chunks/ssr/_f62f70._.js",
+        "server/edge/chunks/ssr/edge-wrapper_801223.js",
+        "server/edge/chunks/ssr/edge-wrapper_ee24a6.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "locale": false,
+          "originalSource": "/dashboard/:path*",
+          "regexp": "^/dashboard(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?$"
+        },
+        {
+          "locale": false,
+          "originalSource": "/dashboard",
+          "regexp": "^/dashboard$"
+        }
+      ]
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ],
+  "functions": {}
+}

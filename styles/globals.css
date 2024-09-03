@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar but allow scrolling */
+html,
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+:root {
+  --my-grey: #454745;
+  --primaryColor: #0982ff;
+}
+
+.input1 {
+  height: 47px;
+  border-radius: 10px;
+  outline-color: black;
+  padding: 0 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid var(--my-grey);
+}
+
+.label1 {
+  font-size: 14px;
+  color: var(--my-grey);
+}
+
+.main-btn {
+  height: 55px;
+  background-color: var(--primaryColor);
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+}
