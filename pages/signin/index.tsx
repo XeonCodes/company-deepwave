@@ -6,30 +6,6 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
 export default function SigninPage() {
-  const router = useRouter();
-  const [load, setLoad] = useState(false);
-
-  useEffect(() => {
-    async function Check() {
-      const response = await fetch("/api/session", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const result = await response.json();
-      if (result.isLoggedIn) {
-        return router.push(`${siteConfig.pathLinks.trainingDashboard}`);
-      }
-      setLoad(true);
-    }
-    Check();
-  }, []);
-
-  if (!load) {
-    return;
-  }
-
   return (
     <OnboardLayout>
       <section className="flex flex-col gap-10">

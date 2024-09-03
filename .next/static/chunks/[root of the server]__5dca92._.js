@@ -987,7 +987,7 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-const Sidebar = ({ sideNavLeft, closeSideNav })=>{
+const Sidebar = ({ closeSideNav })=>{
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])("");
@@ -1021,9 +1021,9 @@ const Sidebar = ({ sideNavLeft, closeSideNav })=>{
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: `w-full flex transition-all ${sideNavLeft} md:left-0 duration-700 sm:duration-0 ease-in-out flex-col md:hidden bg-background h-[100%] absolute top-0 md:max-w-[1100px] xl:px-0`,
+        className: `h-[100%] xl:px-0`,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-            className: "mt-5 flex flex-col gap-7",
+            className: " flex flex-col gap-7",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     children: Links.map((v, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1037,22 +1037,22 @@ const Sidebar = ({ sideNavLeft, closeSideNav })=>{
                                     children: v.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/training/sidebar.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 58,
                                     columnNumber: 17
                                 }, this)
                             }, i, false, {
                                 fileName: "[project]/components/training/sidebar.tsx",
-                                lineNumber: 62,
+                                lineNumber: 54,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/training/sidebar.tsx",
-                            lineNumber: 61,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/training/sidebar.tsx",
-                    lineNumber: 59,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1063,30 +1063,30 @@ const Sidebar = ({ sideNavLeft, closeSideNav })=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io5$2f$index$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["IoChevronBackOutline"], {}, void 0, false, {
                                 fileName: "[project]/components/training/sidebar.tsx",
-                                lineNumber: 81,
+                                lineNumber: 73,
                                 columnNumber: 13
                             }, this),
                             "Back Home"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/training/sidebar.tsx",
-                        lineNumber: 77,
+                        lineNumber: 69,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/training/sidebar.tsx",
-                    lineNumber: 76,
+                    lineNumber: 68,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/training/sidebar.tsx",
-            lineNumber: 58,
+            lineNumber: 50,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/training/sidebar.tsx",
-        lineNumber: 55,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 };
@@ -1120,34 +1120,32 @@ var _s = __turbopack_refresh__.signature();
 ;
 function TrainingDashboardLayout({ children }) {
     _s();
-    // State
-    const [sideNavLeft, setSideNavLeft] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(`left-[800px]`);
-    function CloseSideNav() {
-        setSideNavLeft(`left-[800px]`);
-    }
-    function OpenSideNav() {
-        sideNavLeft == "left-[800px]" ? setSideNavLeft(`left-0`) : setSideNavLeft(`left-[800px]`);
+    // State to manage sidebar visibility
+    const [isSideNavOpen, setIsSideNavOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Toggle sidebar visibility
+    function toggleSideNav() {
+        setIsSideNavOpen(!isSideNavOpen);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "h-screen flex flex-col",
+        className: "h-screen flex flex-col overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$layouts$2f$head$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["Head"], {}, void 0, false, {
                 fileName: "[project]/layouts/training.tsx",
-                lineNumber: 26,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "sticky top-0 bg-card flex flex-col items-center z-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$navbar$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["Navbar"], {
-                    openSideNav: OpenSideNav
+                    openSideNav: toggleSideNav
                 }, void 0, false, {
                     fileName: "[project]/layouts/training.tsx",
-                    lineNumber: 28,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/layouts/training.tsx",
-                lineNumber: 27,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1158,31 +1156,37 @@ function TrainingDashboardLayout({ children }) {
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/layouts/training.tsx",
-                        lineNumber: 31,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$sidebar$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["Sidebar"], {
-                        sideNavLeft: sideNavLeft,
-                        closeSideNav: CloseSideNav
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `bg-background pt-5 transition-transform z-20 w-full transform ${isSideNavOpen ? "translate-x-0" : "translate-x-full"} md:translate-x-0 duration-700 ease-in-out md:hidden absolute top-0 right-0 h-full`,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$sidebar$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["Sidebar"], {
+                            closeSideNav: toggleSideNav
+                        }, void 0, false, {
+                            fileName: "[project]/layouts/training.tsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/layouts/training.tsx",
-                        lineNumber: 36,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/layouts/training.tsx",
-                lineNumber: 30,
+                lineNumber: 25,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/layouts/training.tsx",
-        lineNumber: 25,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }
-_s(TrainingDashboardLayout, "vsjrBoRI7Jqs3DwfViM+TZvUhYo=");
+_s(TrainingDashboardLayout, "eOZIbhBVRX80a8L6KRES3+lUnWY=");
 _c = TrainingDashboardLayout;
 var _c;
 __turbopack_refresh__.register(_c, "TrainingDashboardLayout");

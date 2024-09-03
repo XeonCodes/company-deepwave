@@ -816,8 +816,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$onboard$2f$hea
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$onboard$2f$signinComp$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/onboard/signinComp.tsx [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/config/site.ts [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$layouts$2f$onboard$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/layouts/onboard.tsx [ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/router.js [ssr] (ecmascript)");
-var __TURBOPACK__commonjs__external__react__ = __turbopack_external_require__("react", true);
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
     __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$onboard$2f$signinComp$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__,
     __TURBOPACK__imported__module__$5b$project$5d2f$layouts$2f$onboard$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__
@@ -829,30 +827,7 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 ;
 ;
 ;
-;
-;
 function SigninPage() {
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
-    const [load, setLoad] = (0, __TURBOPACK__commonjs__external__react__["useState"])(false);
-    (0, __TURBOPACK__commonjs__external__react__["useEffect"])(()=>{
-        async function Check() {
-            const response = await fetch("/api/session", {
-                method: "GET",
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            });
-            const result = await response.json();
-            if (result.isLoggedIn) {
-                return router.push(`${__TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.trainingDashboard}`);
-            }
-            setLoad(true);
-        }
-        Check();
-    }, []);
-    if (!load) {
-        return;
-    }
     return /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$layouts$2f$onboard$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("section", {
             className: "flex flex-col gap-10",
@@ -864,23 +839,23 @@ function SigninPage() {
                     path: "register"
                 }, void 0, false, {
                     fileName: "[project]/pages/signin/index.tsx",
-                    lineNumber: 37,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$onboard$2f$signinComp$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["SignInForm"], {}, void 0, false, {
                     fileName: "[project]/pages/signin/index.tsx",
-                    lineNumber: 43,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/pages/signin/index.tsx",
-            lineNumber: 35,
+            lineNumber: 11,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/pages/signin/index.tsx",
-        lineNumber: 34,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 }

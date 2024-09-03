@@ -9,6 +9,7 @@ export function middleware(request: NextRequest) {
 
   // Define routes that require authentication
   const protectedRoutes = ["/dashboard"];
+  const protectOnboard = ["/signin", "/register"];
 
   // Check if the request is for a protected route
   if (protectedRoutes.some((route) => pathname.startsWith(route))) {
@@ -19,6 +20,16 @@ export function middleware(request: NextRequest) {
     if (!session) {
       return NextResponse.redirect(
         new URL(`${siteConfig.pathLinks.signin}`, request.url)
+      );
+    }
+  } else if (protectOnboard.some((route) => pathname.startsWith(route))) {
+    // Check for the session data (you can use cookies or headers)
+    const session = request.cookies.get(process.env.COOKIE_NAME!); // Or use another method to check session
+
+    // If session does not exist, redirect to the login page
+    if (session) {
+      return NextResponse.redirect(
+        new URL(`${siteConfig.pathLinks.trainingDashboard}`, request.url)
       );
     }
   }

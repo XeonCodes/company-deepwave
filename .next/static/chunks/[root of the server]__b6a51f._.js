@@ -577,6 +577,7 @@ const ProfileImgDetails = ({ isLoaded, name, title, img, size })=>{
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                         alt: "dp",
+                        sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
                         className: `object-cover`,
                         src: `/assets/${img}`,
                         layout: "fill"
@@ -607,7 +608,7 @@ const ProfileImgDetails = ({ isLoaded, name, title, img, size })=>{
                             children: name
                         }, void 0, false, {
                             fileName: "[project]/components/training/profile-img-details.tsx",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -615,18 +616,18 @@ const ProfileImgDetails = ({ isLoaded, name, title, img, size })=>{
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/components/training/profile-img-details.tsx",
-                            lineNumber: 40,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/training/profile-img-details.tsx",
-                    lineNumber: 36,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/training/profile-img-details.tsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 7
             }, this)
         ]
