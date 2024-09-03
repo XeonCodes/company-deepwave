@@ -27,6 +27,8 @@ export const Navbar = ({ openSideNav }: { openSideNav: () => void }) => {
         h-[60px]
         px-6
         flex
+        shadow-sm
+        sm:shadow-none
         justify-between
         items-center
         w-full

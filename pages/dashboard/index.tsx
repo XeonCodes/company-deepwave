@@ -32,8 +32,8 @@ export default function IndexPage() {
 
   return (
     <TrainingDashboardLayout>
-      <section className="flex flex-col sm:flex-row w-full items-start justify-between">
-        <div className="w-full basis-[29%] flex flex-col gap-4 p-3 md:p-5 rounded-lg shadow-md bg-card order-3 sm:order-1">
+      <section className="flex flex-col sm:flex-row w-full gap-3 items-start justify-between">
+        <div className="w-full basis-[29%] flex flex-col gap-4 p-3 md:p-5 rounded-lg shadow-none sm:shadow-md bg-card order-3 sm:order-1">
           {/* Profile Details */}
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-2">
@@ -83,10 +83,10 @@ export default function IndexPage() {
             </div>
           </Skeleton>
         </div>
-        <div className="w-full basis-[34%] rounded-lg shadow-md bg-card p-3 md:p-5 order-1 sm:order-2">
+        <div className="w-full basis-[34%] rounded-lg shadow-none sm:shadow-md bg-card p-3 md:p-5 order-1 sm:order-2">
           Center
         </div>
-        <div className="w-full basis-[34%] rounded-lg shadow-md bg-card p-3 md:p-5 order-2 sm:order-3">
+        <div className="w-full basis-[34%] rounded-lg shadow-none sm:shadow-md bg-card p-3 md:p-5 order-2 sm:order-3">
           Right
         </div>
       </section>

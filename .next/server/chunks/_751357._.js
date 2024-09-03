@@ -16,7 +16,7 @@ const sessionOptions = {
     cookieOptions: {
         httpOnly: true,
         secure: ("TURBOPACK compile-time value", "development") === "production",
-        maxAge: 60 * 60
+        maxAge: 60 * 10
     }
 };
 
