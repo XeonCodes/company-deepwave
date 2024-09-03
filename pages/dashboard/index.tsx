@@ -99,7 +99,7 @@ export default function IndexPage() {
   return (
     <TrainingDashboardLayout>
       <section className="flex flex-col sm:flex-row w-full gap-3 items-start justify-between">
-        <div className="w-full basis-[29%] rounded-lg shadow-none sm:shadow-md bg-card order-3 sm:order-1">
+        <div className="w-full mb-5 md:mb-0 basis-[29%] rounded-lg shadow-none sm:shadow-md bg-card order-3 sm:order-1">
           {/* Profile Details */}
           <div className="p-3 md:p-5 flex flex-col gap-4">
             <div className="flex items-start justify-between">

@@ -45,12 +45,23 @@ export const Sidebar = ({ closeSideNav }: { closeSideNav: () => void }) => {
     },
   ];
 
+  const disabled = [
+    siteConfig.pathLinks.trainingTools,
+    siteConfig.pathLinks.trainingNotificaiton,
+    siteConfig.pathLinks.trainingProfile,
+  ];
+
   return (
     <nav className={`h-[100%] xl:px-0`}>
       <ul className=" flex flex-col gap-7">
         <div>
           {Links.map((v: any, i: any) => (
-            <Link href={v.path} role="presentation" onClick={closeSideNav}>
+            <Link
+              className={`${disabled.some((route) => v.path.startsWith(route)) && "pointer-events-none"}`}
+              href={v.path}
+              role="presentation"
+              onClick={closeSideNav}
+            >
               <li
                 key={i}
                 className={`py-5 px-6 ${active === v.path && "bg-card font-medium text-primary"}`}

@@ -144,7 +144,7 @@ export const Navbar = ({ openSideNav }: { openSideNav: () => void }) => {
           }`}
         >
           <Link
-            className={`text-[15px] font-medium ${
+            className={`text-[15px] pointer-events-none font-medium ${
               isActive(siteConfig.pathLinks.trainingTools)
                 ? "text-primary"
                 : "opacity-70"
@@ -183,7 +183,7 @@ export const Navbar = ({ openSideNav }: { openSideNav: () => void }) => {
           }`}
         >
           <Link
-            className={`text-[15px] font-medium ${
+            className={`text-[15px] font-medium pointer-events-none ${
               isActive(siteConfig.pathLinks.trainingNotificaiton)
                 ? "text-primary"
                 : "opacity-70"
@@ -205,7 +205,10 @@ export const Navbar = ({ openSideNav }: { openSideNav: () => void }) => {
               : ""
           }`}
         >
-          <Link href={siteConfig.pathLinks.trainingProfile}>
+          <Link
+            className=" pointer-events-none"
+            href={siteConfig.pathLinks.trainingProfile}
+          >
             <Image
               alt="logo"
               width={30}

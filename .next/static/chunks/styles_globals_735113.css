@@ -7924,6 +7924,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 @media (width >= 768px) {
+  .md\:mb-0 {
+    margin-bottom: 0;
+  }
+
   .md\:flex {
     display: flex;
   }
