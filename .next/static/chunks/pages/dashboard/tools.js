@@ -13,9 +13,9 @@ __turbopack_load_page_chunks__("/dashboard/tools", [
   "static/chunks/node_modules_react-icons_bi_index_mjs_41d22a._.js",
   "static/chunks/node_modules_react-icons_io5_index_mjs_e31071._.js",
   "static/chunks/node_modules_react-icons_lib_75a63d._.js",
-  "static/chunks/node_modules_56a090._.js",
+  "static/chunks/node_modules_3d7d3e._.js",
   "static/chunks/[root of the server]__5dca92._.js",
-  "static/chunks/node_modules_next_dist_pages_072ff0._.js",
-  "static/chunks/[next]_entry_page-loader_ts_926b94._.js",
-  "static/chunks/[next]_entry_page-loader_ts_dc08bb._.js"
+  "static/chunks/node_modules_next_dist_pages_5900ac._.js",
+  "static/chunks/[next]_entry_page-loader_ts_a072ee._.js",
+  "static/chunks/[next]_entry_page-loader_ts_da0c78._.js"
 ])

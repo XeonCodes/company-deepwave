@@ -12,7 +12,7 @@ export default function TrainingDashboardLayout({
   const [sideNavLeft, setSideNavLeft] = useState(`left-[800px]`);
 
   function CloseSideNav() {
-    setSideNavLeft(`-left-[800px]`);
+    setSideNavLeft(`left-[800px]`);
   }
 
   function OpenSideNav() {
@@ -33,7 +33,7 @@ export default function TrainingDashboardLayout({
         </main>
 
         {/* SideBarf */}
-        <Sidebar sideNavLeft={sideNavLeft} />
+        <Sidebar sideNavLeft={sideNavLeft} closeSideNav={CloseSideNav} />
       </div>
     </div>
   );

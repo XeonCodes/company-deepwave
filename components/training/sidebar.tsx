@@ -9,7 +9,13 @@ interface LinkTypes {
   path: string;
 }
 
-export const Sidebar = ({ sideNavLeft }: { sideNavLeft: any }) => {
+export const Sidebar = ({
+  sideNavLeft,
+  closeSideNav,
+}: {
+  sideNavLeft: any;
+  closeSideNav: () => void;
+}) => {
   const router = useRouter();
 
   const [active, setActive] = useState("");
@@ -52,7 +58,7 @@ export const Sidebar = ({ sideNavLeft }: { sideNavLeft: any }) => {
       <ul className="mt-5 flex flex-col gap-7">
         <div>
           {Links.map((v: any, i: any) => (
-            <Link href={v.path}>
+            <Link href={v.path} role="presentation" onClick={closeSideNav}>
               <li
                 key={i}
                 className={`py-5 px-6 ${active === v.path && "bg-card font-medium text-primary"}`}

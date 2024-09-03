@@ -702,7 +702,7 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 ;
 ;
 ;
-const Sidebar = ({ sideNavLeft })=>{
+const Sidebar = ({ sideNavLeft, closeSideNav })=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const [active, setActive] = (0, __TURBOPACK__commonjs__external__react__["useState"])("");
     (0, __TURBOPACK__commonjs__external__react__["useEffect"])(()=>{
@@ -742,6 +742,8 @@ const Sidebar = ({ sideNavLeft })=>{
                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
                     children: Links.map((v, i)=>/*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                             href: v.path,
+                            role: "presentation",
+                            onClick: closeSideNav,
                             children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("li", {
                                 className: `py-5 px-6 ${active === v.path && "bg-card font-medium text-primary"}`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
@@ -749,22 +751,22 @@ const Sidebar = ({ sideNavLeft })=>{
                                     children: v.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/training/sidebar.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 66,
                                     columnNumber: 17
                                 }, this)
                             }, i, false, {
                                 fileName: "[project]/components/training/sidebar.tsx",
-                                lineNumber: 56,
+                                lineNumber: 62,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/training/sidebar.tsx",
-                            lineNumber: 55,
+                            lineNumber: 61,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/training/sidebar.tsx",
-                    lineNumber: 53,
+                    lineNumber: 59,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
@@ -775,30 +777,30 @@ const Sidebar = ({ sideNavLeft })=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$icons$2f$io5__["IoChevronBackOutline"], {}, void 0, false, {
                                 fileName: "[project]/components/training/sidebar.tsx",
-                                lineNumber: 75,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this),
                             "Back Home"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/training/sidebar.tsx",
-                        lineNumber: 71,
+                        lineNumber: 77,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/training/sidebar.tsx",
-                    lineNumber: 70,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/training/sidebar.tsx",
-            lineNumber: 52,
+            lineNumber: 58,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/training/sidebar.tsx",
-        lineNumber: 49,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 };
@@ -832,7 +834,7 @@ function TrainingDashboardLayout({ children }) {
     // State
     const [sideNavLeft, setSideNavLeft] = (0, __TURBOPACK__commonjs__external__react__["useState"])(`left-[800px]`);
     function CloseSideNav() {
-        setSideNavLeft(`-left-[800px]`);
+        setSideNavLeft(`left-[800px]`);
     }
     function OpenSideNav() {
         sideNavLeft == "left-[800px]" ? setSideNavLeft(`left-0`) : setSideNavLeft(`left-[800px]`);
@@ -871,7 +873,8 @@ function TrainingDashboardLayout({ children }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$sidebar$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["Sidebar"], {
-                        sideNavLeft: sideNavLeft
+                        sideNavLeft: sideNavLeft,
+                        closeSideNav: CloseSideNav
                     }, void 0, false, {
                         fileName: "[project]/layouts/training.tsx",
                         lineNumber: 36,
