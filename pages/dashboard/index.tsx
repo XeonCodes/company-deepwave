@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import { FiSettings } from "react-icons/fi";
 import { toast } from "react-toastify";
 import { MdOutlineEmail } from "react-icons/md";
+import Link from "next/link";
 
 export default function IndexPage() {
   const [sessionData, setSessionData] = useState<any>(null);
@@ -77,7 +78,15 @@ export default function IndexPage() {
               size={35}
             />
             <div className=" border-1 p-1 rounded-md">
-              <MdOutlineEmail className="opacity-70" size={20} />
+              <Link
+                href={`mailto:${sessionData?.tutorEmail}?subject=${encodeURIComponent("Deepwave Phanthom Student")}`}
+              >
+                <MdOutlineEmail
+                  role="presentation"
+                  className="opacity-70"
+                  size={20}
+                />
+              </Link>
             </div>
           </div>
         </div>
