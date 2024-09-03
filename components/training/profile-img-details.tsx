@@ -11,7 +11,7 @@ export const ProfileImgDetails = ({
 }: {
   isLoaded: boolean;
   name: any;
-  title: string;
+  title?: string;
   img: string;
   size: number;
 }) => {

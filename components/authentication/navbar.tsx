@@ -17,9 +17,9 @@ function Navbar() {
       >
         <BiSolidMessageSquareCheck
           color={siteConfig.appColors.primaryColor}
-          size={47}
+          size={36}
         />
-        <h1 className={`text-[30px] flex text-black font-black italic`}>
+        <h1 className={`text-[26px] flex text-black font-black italic`}>
           {siteConfig.name.toUpperCase()}
         </h1>
       </Link>

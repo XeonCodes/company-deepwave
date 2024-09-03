@@ -17,7 +17,9 @@ export default function TrainingDashboardLayout({
   }
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden">
+    <div
+      className={`h-screen flex flex-col ${isSideNavOpen && "overflow-hidden"} `}
+    >
       <Head />
       <div className="sticky top-0 bg-card flex flex-col items-center z-10">
         <Navbar openSideNav={toggleSideNav} />
