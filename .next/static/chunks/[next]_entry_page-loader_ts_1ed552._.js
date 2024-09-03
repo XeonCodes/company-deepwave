@@ -1,9 +1,9 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
-    "static/chunks/[next]_entry_page-loader_ts_1ed552._.js",
+    "static/chunks/[next]_entry_page-loader_ts_c9a402._.js",
     {},
 ]);
 (globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
-  "path": "static/chunks/[next]_entry_page-loader_ts_1ed552._.js",
+  "path": "static/chunks/[next]_entry_page-loader_ts_c9a402._.js",
   "chunks": [
     "static/chunks/node_modules_next_dist_compiled_b3ce17._.js",
     "static/chunks/node_modules_next_dist_shared_lib_a77997._.js",
@@ -20,7 +20,7 @@
     "static/chunks/node_modules_react-icons_lib_75a63d._.js",
     "static/chunks/node_modules_56a090._.js",
     "static/chunks/[root of the server]__5dca92._.js",
-    "static/chunks/node_modules_next_dist_pages_54a6ee._.js"
+    "static/chunks/node_modules_next_dist_pages_072ff0._.js"
   ],
   "source": "entry"
 });

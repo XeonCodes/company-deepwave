@@ -1,7 +1,7 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
-    "static/chunks/[next]_entry_page-loader_ts_923f56._.js",
+    "static/chunks/[next]_entry_page-loader_ts_df8d5a._.js",
     {},
-    {"otherChunks":["static/chunks/node_modules_next_dist_compiled_b3ce17._.js","static/chunks/node_modules_next_dist_shared_lib_a77997._.js","static/chunks/node_modules_next_dist_client_2b90ce._.js","static/chunks/node_modules_next_dist_c3f6a0._.js","static/chunks/node_modules_next_315ff7._.js","static/chunks/node_modules_react_1cad9b._.js","static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e07.js","static/chunks/node_modules_react-dom_f14d04._.js","static/chunks/node_modules_react-icons_io_index_mjs_0372f8._.js","static/chunks/node_modules_react-icons_fi_index_mjs_739494._.js","static/chunks/node_modules_react-icons_bi_index_mjs_41d22a._.js","static/chunks/node_modules_react-icons_lib_75a63d._.js","static/chunks/node_modules_tailwind-merge_dist_lib_7ed4a1._.js","static/chunks/node_modules_9dbc43._.js","static/chunks/[root of the server]__4158ab._.js","static/chunks/node_modules_next_dist_pages_d4d1b2._.js"],"runtimeModuleIds":["[project]/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js [client] (ecmascript)","[project]/node_modules/next/dist/client/next-dev-turbopack.js [client] (ecmascript)","[next]/entry/page-loader.ts { PAGE => \"[project]/pages/dashboard/index.tsx [client] (ecmascript)\" } [client] (ecmascript)"]}
+    {"otherChunks":["static/chunks/node_modules_next_dist_compiled_b3ce17._.js","static/chunks/node_modules_next_dist_shared_lib_a77997._.js","static/chunks/node_modules_next_dist_client_2b90ce._.js","static/chunks/node_modules_next_dist_c3f6a0._.js","static/chunks/node_modules_next_315ff7._.js","static/chunks/node_modules_react_1cad9b._.js","static/chunks/node_modules_react-dom_cjs_react-dom_development_ab7e07.js","static/chunks/node_modules_react-dom_f14d04._.js","static/chunks/node_modules_react-icons_io_index_mjs_0372f8._.js","static/chunks/node_modules_react-icons_fi_index_mjs_739494._.js","static/chunks/node_modules_react-icons_bi_index_mjs_41d22a._.js","static/chunks/node_modules_react-icons_lib_75a63d._.js","static/chunks/node_modules_tailwind-merge_dist_lib_7ed4a1._.js","static/chunks/node_modules_9dbc43._.js","static/chunks/[root of the server]__4158ab._.js","static/chunks/node_modules_next_dist_pages_440ba0._.js"],"runtimeModuleIds":["[project]/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js [client] (ecmascript)","[project]/node_modules/next/dist/client/next-dev-turbopack.js [client] (ecmascript)","[next]/entry/page-loader.ts { PAGE => \"[project]/pages/dashboard/index.tsx [client] (ecmascript)\" } [client] (ecmascript)"]}
 ]);
 (() => {
 if (!Array.isArray(globalThis.TURBOPACK)) {
@@ -1557,4 +1557,4 @@ chunksToRegister.forEach(registerChunk);
 })();
 
 
-//# sourceMappingURL=%5Bnext%5D_entry_page-loader_ts_923f56._.js.map
+//# sourceMappingURL=%5Bnext%5D_entry_page-loader_ts_df8d5a._.js.map

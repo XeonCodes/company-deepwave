@@ -742,30 +742,54 @@ const Sidebar = ({ sideNavLeft })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("nav", {
         className: `w-full flex transition-all ${sideNavLeft} md:left-0 duration-700 sm:duration-0 ease-in-out flex-col md:hidden bg-background h-[100%] absolute top-0 md:max-w-[1100px] xl:px-0`,
         children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("ul", {
-            className: "mt-5",
-            children: Links.map((v, i)=>/*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                    href: v.path,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("li", {
-                        className: `py-5 px-6 ${active === v.path && "bg-card font-medium text-primary"}`,
-                        children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
-                            className: `text-[14px] ${active === v.path ? "opacity-100" : "opacity-65"}`,
-                            children: v.title
+            className: "mt-5 flex flex-col gap-7",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                    children: Links.map((v, i)=>/*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: v.path,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("li", {
+                                className: `py-5 px-6 ${active === v.path && "bg-card font-medium text-primary"}`,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                                    className: `text-[14px] ${active === v.path ? "opacity-100" : "opacity-65"}`,
+                                    children: v.title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/training/sidebar.tsx",
+                                    lineNumber: 59,
+                                    columnNumber: 17
+                                }, this)
+                            }, i, false, {
+                                fileName: "[project]/components/training/sidebar.tsx",
+                                lineNumber: 55,
+                                columnNumber: 15
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/training/sidebar.tsx",
-                            lineNumber: 58,
-                            columnNumber: 15
-                        }, this)
-                    }, i, false, {
+                            lineNumber: 54,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/training/sidebar.tsx",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("div", {
+                    className: "px-6 flex flex-col items-end",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        className: "px-6 py-3 font-medium rounded-md bg-primary text-white",
+                        href: __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.landingPage,
+                        children: "Back Home"
+                    }, void 0, false, {
                         fileName: "[project]/components/training/sidebar.tsx",
-                        lineNumber: 54,
-                        columnNumber: 13
+                        lineNumber: 70,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/training/sidebar.tsx",
-                    lineNumber: 53,
-                    columnNumber: 11
-                }, this))
-        }, void 0, false, {
+                    lineNumber: 69,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/components/training/sidebar.tsx",
             lineNumber: 51,
             columnNumber: 7

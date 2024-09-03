@@ -4,5 +4,9 @@
   "/dashboard": "pages/dashboard.js",
   "/api/session": "pages/api/session.js",
   "/dashboard/courses": "pages/dashboard/courses.js",
-  "/dashboard/profile": "pages/dashboard/profile.js"
+  "/dashboard/profile": "pages/dashboard/profile.js",
+  "/dashboard/tools": "pages/dashboard/tools.js",
+  "/": "pages/index.js",
+  "/signin": "pages/signin.js",
+  "/api/login": "pages/api/login.js"
 }

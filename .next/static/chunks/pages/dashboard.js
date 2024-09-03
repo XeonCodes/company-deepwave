@@ -10,11 +10,12 @@ __turbopack_load_page_chunks__("/dashboard", [
   "static/chunks/node_modules_react-icons_io_index_mjs_0372f8._.js",
   "static/chunks/node_modules_react-icons_fi_index_mjs_739494._.js",
   "static/chunks/node_modules_react-icons_bi_index_mjs_41d22a._.js",
+  "static/chunks/node_modules_react-icons_io5_index_mjs_e31071._.js",
   "static/chunks/node_modules_react-icons_lib_75a63d._.js",
   "static/chunks/node_modules_tailwind-merge_dist_lib_7ed4a1._.js",
   "static/chunks/node_modules_9dbc43._.js",
   "static/chunks/[root of the server]__4158ab._.js",
-  "static/chunks/node_modules_next_dist_pages_d4d1b2._.js",
-  "static/chunks/[next]_entry_page-loader_ts_1d378f._.js",
-  "static/chunks/[next]_entry_page-loader_ts_923f56._.js"
+  "static/chunks/node_modules_next_dist_pages_440ba0._.js",
+  "static/chunks/[next]_entry_page-loader_ts_2c7d85._.js",
+  "static/chunks/[next]_entry_page-loader_ts_ef896a._.js"
 ])

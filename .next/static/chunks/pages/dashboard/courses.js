@@ -11,10 +11,11 @@ __turbopack_load_page_chunks__("/dashboard/courses", [
   "static/chunks/node_modules_react-icons_io_index_mjs_0372f8._.js",
   "static/chunks/node_modules_react-icons_fi_index_mjs_739494._.js",
   "static/chunks/node_modules_react-icons_bi_index_mjs_41d22a._.js",
+  "static/chunks/node_modules_react-icons_io5_index_mjs_e31071._.js",
   "static/chunks/node_modules_react-icons_lib_75a63d._.js",
   "static/chunks/node_modules_56a090._.js",
   "static/chunks/[root of the server]__ad79c4._.js",
-  "static/chunks/node_modules_next_dist_pages_4d620f._.js",
-  "static/chunks/[next]_entry_page-loader_ts_d00ace._.js",
-  "static/chunks/[next]_entry_page-loader_ts_2408a7._.js"
+  "static/chunks/node_modules_next_dist_pages_0196b3._.js",
+  "static/chunks/[next]_entry_page-loader_ts_0a6c18._.js",
+  "static/chunks/[next]_entry_page-loader_ts_d4cc17._.js"
 ])
