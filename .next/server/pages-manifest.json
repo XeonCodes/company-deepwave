@@ -8,5 +8,7 @@
   "/dashboard/tools": "pages/dashboard/tools.js",
   "/": "pages/index.js",
   "/signin": "pages/signin.js",
-  "/api/login": "pages/api/login.js"
+  "/api/login": "pages/api/login.js",
+  "/dashboard/purchase": "pages/dashboard/purchase.js",
+  "/dashboard/notification": "pages/dashboard/notification.js"
 }

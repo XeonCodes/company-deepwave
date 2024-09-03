@@ -11,10 +11,11 @@ __turbopack_load_page_chunks__("/dashboard/purchase", [
   "static/chunks/node_modules_react-icons_io_index_mjs_0372f8._.js",
   "static/chunks/node_modules_react-icons_fi_index_mjs_739494._.js",
   "static/chunks/node_modules_react-icons_bi_index_mjs_41d22a._.js",
+  "static/chunks/node_modules_react-icons_io5_index_mjs_e31071._.js",
   "static/chunks/node_modules_react-icons_lib_75a63d._.js",
-  "static/chunks/node_modules_56a090._.js",
+  "static/chunks/node_modules_3d7d3e._.js",
   "static/chunks/[root of the server]__125eb2._.js",
-  "static/chunks/node_modules_next_dist_pages_e8ade8._.js",
-  "static/chunks/[next]_entry_page-loader_ts_bf16d3._.js",
-  "static/chunks/[next]_entry_page-loader_ts_98178d._.js"
+  "static/chunks/node_modules_next_dist_pages_0f02d8._.js",
+  "static/chunks/[next]_entry_page-loader_ts_b404e6._.js",
+  "static/chunks/[next]_entry_page-loader_ts_d9cc72._.js"
 ])

@@ -203,26 +203,20 @@ export const Navbar = ({ openSideNav }: { openSideNav: () => void }) => {
               : ""
           }`}
         >
-          <Skeleton
-            className="rounded-full"
-            disableAnimation
-            isLoaded={isLoaded}
-          >
-            <Link href={siteConfig.pathLinks.trainingProfile}>
-              <Image
-                alt="logo"
-                width={30}
-                height={30}
-                className={`rounded-full w-[30px] h-[30px] object-cover ${
-                  isActive(siteConfig.pathLinks.trainingProfile)
-                    ? "border-2 border-[#0982ff]"
-                    : ""
-                }`}
-                quality={40}
-                src="/assets/lady.jpg"
-              />
-            </Link>
-          </Skeleton>
+          <Link href={siteConfig.pathLinks.trainingProfile}>
+            <Image
+              alt="logo"
+              width={30}
+              height={30}
+              className={`rounded-full w-[30px] h-[30px] object-cover ${
+                isActive(siteConfig.pathLinks.trainingProfile)
+                  ? "border-2 border-[#0982ff]"
+                  : ""
+              }`}
+              quality={40}
+              src="/assets/lady.jpg"
+            />
+          </Link>
         </li>
       </ul>
     </nav>

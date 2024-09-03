@@ -372,17 +372,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link
 var __TURBOPACK__esm__external__react$2d$icons$2f$io__ = __turbopack_external_import__("react-icons/io");
 var __TURBOPACK__esm__external__react$2d$icons$2f$fi__ = __turbopack_external_import__("react-icons/fi");
 var __TURBOPACK__esm__external__react$2d$icons$2f$bi__ = __turbopack_external_import__("react-icons/bi");
-var __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__ = __turbopack_external_import__("@nextui-org/skeleton");
 var __TURBOPACK__commonjs__external__react__ = __turbopack_external_require__("react", true);
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
     __TURBOPACK__esm__external__react$2d$icons$2f$io__,
     __TURBOPACK__esm__external__react$2d$icons$2f$fi__,
-    __TURBOPACK__esm__external__react$2d$icons$2f$bi__,
-    __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__
+    __TURBOPACK__esm__external__react$2d$icons$2f$bi__
 ]);
-[__TURBOPACK__esm__external__react$2d$icons$2f$io__, __TURBOPACK__esm__external__react$2d$icons$2f$fi__, __TURBOPACK__esm__external__react$2d$icons$2f$bi__, __TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+[__TURBOPACK__esm__external__react$2d$icons$2f$io__, __TURBOPACK__esm__external__react$2d$icons$2f$fi__, __TURBOPACK__esm__external__react$2d$icons$2f$bi__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
 "__TURBOPACK__ecmascript__hoisting__location__";
-;
 ;
 ;
 ;
@@ -569,27 +566,18 @@ const Navbar = ({ openSideNav })=>{
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])("li", {
                         className: `h-full flex flex-col justify-center ${isActive(__TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.trainingProfile) ? "border-b-2 border-[#0982ff]" : ""}`,
-                        children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__$40$nextui$2d$org$2f$skeleton__["Skeleton"], {
-                            className: "rounded-full",
-                            disableAnimation: true,
-                            isLoaded: isLoaded,
-                            children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.trainingProfile,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    alt: "logo",
-                                    width: 30,
-                                    height: 30,
-                                    className: `rounded-full w-[30px] h-[30px] object-cover ${isActive(__TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.trainingProfile) ? "border-2 border-[#0982ff]" : ""}`,
-                                    quality: 40,
-                                    src: "/assets/lady.jpg"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/training/navbar.tsx",
-                                    lineNumber: 212,
-                                    columnNumber: 15
-                                }, this)
+                        children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.trainingProfile,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                alt: "logo",
+                                width: 30,
+                                height: 30,
+                                className: `rounded-full w-[30px] h-[30px] object-cover ${isActive(__TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["siteConfig"].pathLinks.trainingProfile) ? "border-2 border-[#0982ff]" : ""}`,
+                                quality: 40,
+                                src: "/assets/lady.jpg"
                             }, void 0, false, {
                                 fileName: "[project]/components/training/navbar.tsx",
-                                lineNumber: 211,
+                                lineNumber: 207,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
