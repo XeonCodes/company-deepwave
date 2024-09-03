@@ -2,7 +2,7 @@ import HeaderText from "@/components/onboard/header";
 import { SignInForm } from "@/components/onboard/signinComp";
 import { siteConfig } from "@/config/site";
 import OnboardLayout from "@/layouts/onboard";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
 export default function SigninPage() {

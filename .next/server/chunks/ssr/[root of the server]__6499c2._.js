@@ -816,7 +816,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$onboard$2f$hea
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$onboard$2f$signinComp$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/onboard/signinComp.tsx [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$config$2f$site$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/config/site.ts [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$layouts$2f$onboard$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/layouts/onboard.tsx [ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/router.js [ssr] (ecmascript)");
 var __TURBOPACK__commonjs__external__react__ = __turbopack_external_require__("react", true);
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
     __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$onboard$2f$signinComp$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__,
@@ -832,7 +832,7 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 ;
 ;
 function SigninPage() {
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const [load, setLoad] = (0, __TURBOPACK__commonjs__external__react__["useState"])(false);
     (0, __TURBOPACK__commonjs__external__react__["useEffect"])(()=>{
         async function Check() {
