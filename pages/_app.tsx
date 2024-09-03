@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }: AppProps) {
           />
         )}
         <Component {...pageProps} />
-        <ToastContainer autoClose={2000} />
+        <ToastContainer limit={1} autoClose={2000} />
       </NextThemesProvider>
     </NextUIProvider>
   );

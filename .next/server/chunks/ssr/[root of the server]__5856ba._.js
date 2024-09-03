@@ -174,6 +174,7 @@ function App({ Component, pageProps }) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__esm__external__react$2d$toastify__["ToastContainer"], {
+                    limit: 1,
                     autoClose: 2000
                 }, void 0, false, {
                     fileName: "[project]/pages/_app.tsx",

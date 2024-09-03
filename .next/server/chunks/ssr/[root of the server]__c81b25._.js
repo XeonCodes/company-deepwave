@@ -1328,7 +1328,7 @@ function IndexPage() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__commonjs__external__react$2f$jsx$2d$dev$2d$runtime__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$training$2f$ProfileDetailSmall$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ProfileImgDetailsSmall"], {
                                                             isLoaded: isLoaded,
-                                                            name: sessionData?.tutor,
+                                                            name: v.tutor,
                                                             img: v.dp,
                                                             size: 15
                                                         }, void 0, false, {
