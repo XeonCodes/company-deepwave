@@ -74,7 +74,7 @@ export default function IndexPage() {
               title={sessionData?.tutorTitle}
               isLoaded={isLoaded}
               name={sessionData?.tutor}
-              img={sessionData?.tutorImg}
+              img={"lady.jpg"}
               size={35}
             />
             <div className="border-1 p-1 rounded-md">

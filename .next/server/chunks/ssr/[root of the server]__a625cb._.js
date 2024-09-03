@@ -1082,7 +1082,7 @@ function IndexPage() {
                                 title: sessionData?.tutorTitle,
                                 isLoaded: isLoaded,
                                 name: sessionData?.tutor,
-                                img: sessionData?.tutorImg,
+                                img: "lady.jpg",
                                 size: 35
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/index.tsx",
